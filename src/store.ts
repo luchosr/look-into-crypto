@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import axios from 'axios';
+import { CryptoCurrenciesResponseSchema } from './schema/crypto-schema';
 
 async function getCryptos() {
   const url =
@@ -8,7 +9,8 @@ async function getCryptos() {
   const {
     data: { Data },
   } = await axios.get(url);
-  console.log(Data);
+  const result = CryptoCurrenciesResponseSchema.safeParse(Data);
+  console.log(result);
 }
 
 export const useCryptoStore = create(() => ({
