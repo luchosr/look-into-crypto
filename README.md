@@ -134,6 +134,3 @@ The app is deployed on **Vercel**: [look-into-crypto.vercel.app](https://look-in
 
 To deploy your own copy, build with `pnpm build` and serve the generated `dist/` folder on any static host (Vercel, Netlify, GitHub Pages, etc.).
 
-## License
-
-No license file is currently included. If you plan to make this reusable, consider adding one (e.g. [MIT](https://choosealicense.com/licenses/mit/)).
